@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "logging-life",
+  "private_key_id": "5c264075fa3358a077c2cae78f732ef0bb91da1d",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDEdbja+1dP6kyZ\n4pl6a7jx+Vd4HZK8ET0sC3VIZkUNJd5fAusKXd1uY7j/Z8xDqk1HB66gKncG0m6+\nLDektG8j3Nm9sn/kdddUqM4bmBurwVnjGv+NNh0iWEDshJ3VXj09SQO57oZCY5vO\nS2If2/i2XPESUHq7ZF2IsZqmUsbiUeWhoqTrjtGK84DEzM7PIsm+s1X9IMwFDR2B\nBTPo8XFCaofr++KjiCusZWXOflGFYydaQZ6QlVHBUd04h2eccQ9fX6qVfiqbAbqX\n7rq5pGOUJbc5irlR/RErz+z8i0LVP4kZI+7f3QxapLmL5jCwF6rwLJKu8iBIqQrj\npYl1pr+XAgMBAAECggEBAL7wJ1R1OVvLPN3HFSGdNqe+jZuJKoasPobjL/7Ins3z\ngxdWj7eImOBj/XYFnMoa53ZkafzyqLIxrT4ZXY8vamExkVJD/Pa+7SQz1/WLtUEN\n713BbKQC9vfdTGRTU87/A4ffwcZgo448nz41l82dDjG3TPlezJn6Jsnmy4ZhJzjn\naZq4DromMFw4fYlaskOecrGFXFPqH8s9nvdFHMbaWxfnYYuRzRWst0N0nhUozrMj\nbndFX3tyuK0rvkb4H8TJD/IUfNLqRv/0YwJMo/2XR6NHqo+zp9jF66A4sbEVAeff\nznEfIVTyIaSgzEk918HSnMLh6kGmCyzdfJKn/D6Y8lECgYEA5+BHNYKQ4rQDchQK\nkz7v/t2bpTmfzy96yEbSNnyl5h+VA80LCDoD/eqhLZy5JiUG0EU0vn+CWfKQoCdg\n7w/gWipD64IGgW4D7wR4o0PTIiasF5YEmWdDZfcD4r6qrBwR69tn3FHkYvRLDwew\nJ1rBPfuUKDVTWcJxq4JsY9l6DD8CgYEA2OYtkRsa5qaj4RsYt+YHUfBkq4FqQ7bv\nmsZ0jNi/VeW2fpUpsH2QjdBhb0Dya/G/wWoGHbSFK/f5PVhwvvP1a76qjByO76SD\n9Ghp3kRIxbEUfokY3J1MFb7ST2uXpSstubmlmoSqRhdsowdSyhwAvSnpJvFn5xZ8\nNPUAUgwo1qkCgYAIvE1SecHFmKyMjq67T2KxQl4Lwnj/0DUa+HgQ7288lTIC+6WP\nwMfHuCAsXLwo8Lop/IF5L8qUYuwJ7JHdT8bO/sqiQ7rFA4UIay20UOjSX4yaMt+n\ne9lxLPYrg61gYIpYTWLDTR6Cj9uIDG0ZfnTLRgAV57RlLEsl//rfZCER9wKBgQDP\nafYjMAdej/ZhGnddzJQtcDPkqiJDVNn2aVclJVR7QOtuSxgN1VV5t86lBDeOsCSO\nQeRNXcaH0F9AoaVXhZWojjErQVgSpIEnJP4wdZ4dpoQRqOrkdWs/1DXritj+MrdM\nRtKtW7Y0xsu1bxhle7fdLQnvmqSgoKjwP2YqD8Sx2QKBgBB6/HsB6Mwzo7z4/DEe\nuOw0KKjYzLVZWioETWE2gQdAR7W+AokKujFQfSjcj04Zj+vS++klNIqLYKcSQ9YG\nDYFyMPvZhfKjizdSDCrD4wj2P1IsG6ToprHpvs6xYDdH/47rPX7nxqjvej43IfYm\nsf3T2IRqrgmwGKBF5TCVphAy\n-----END PRIVATE KEY-----\n",
+  "client_email": "admin-506@logging-life.iam.gserviceaccount.com",
+  "client_id": "109192654918707592716",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/admin-506%40logging-life.iam.gserviceaccount.com"
+}
