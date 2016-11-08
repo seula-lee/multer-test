@@ -1,11 +1,10 @@
 var express = require('express');
-var path = require('path');
+var path    = require('path');
 var favicon = require('serve-favicon');
-var logger = require('morgan');               // morgan: 클라이언트의 HTTP 요청 정보를 로깅하기 위한 모듈
+var logger  = require('morgan');              // morgan: 클라이언트의 HTTP 요청 정보를 로깅하기 위한 모듈
 var cookieParser = require('cookie-parser');  // cookie-parser: 접속한 클라이언트의 쿠키 정보에 접근하기 위한 모듈
-var bodyParser = require('body-parser');      // body-parser: 클라이언트의 HTTP 요청 중 POST 요청의 바디 데이터에 접근하기 위한 모듈
+var bodyParser   = require('body-parser');    // body-parser: 클라이언트의 HTTP 요청 중 POST 요청의 바디 데이터에 접근하기 위한 모듈
 var multer = require('multer');
-
 
 // getting routes module
 var index   = require('./routes/index');
