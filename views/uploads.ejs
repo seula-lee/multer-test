@@ -1,0 +1,20 @@
+<html>
+<head></head>
+<body>
+  <div>
+    <img src='<%=src %>'/>
+  <div>
+  <div>
+    <ul>
+      <%
+        for(var i=0; i<labels.length; i++){
+          var item = labels[i].desc;
+      %>
+        <li><%=item%></li>
+      <%
+        }
+      %>
+    </ul>
+  </div>
+</body>
+</html>

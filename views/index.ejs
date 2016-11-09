@@ -1,0 +1,17 @@
+<html><!-- ng-app="logging-life"-->
+<head>
+<title><%=title %></title>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+    <script src="controller/controller.js"></script> -->
+</head>
+<body> <!--ng-controller="uploads"-->
+  <form  action='/uploads' method="post" enctype="multipart/form-data" >
+          <input type='file' name='file' />
+          <input type='submit' />
+  </form>
+  <!--
+  <div ng-repeat="image in imageList">
+      <img ng-src="{{image.filePath}}" width="50" height="50" />
+  </div>  -->
+</body>
+</html>

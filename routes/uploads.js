@@ -1,12 +1,6 @@
 var express = require('express');
 var multer  = require('multer');
 var fs      = require('fs');
-var Vision = require('@google-cloud/vision');
-// Instantiate a vision client
-var vision = Vision({
-  projectId: 'logging-life',
-  keyFilename: './api/logging-life.json',
-});
 
 var router = express.Router();
 var storage =   multer.diskStorage({
@@ -20,8 +14,9 @@ var storage =   multer.diskStorage({
 
 var upload = multer({storage: storage});
 
+// FILE UPLOAD
 router.post('/', upload.any() , function(req, res, next){
-  console.log(req.files);  // debug
+  var labelList = [];
   var inputFile = req.files[0].destination+req.files[0].filename;
 
   // call google vision api
@@ -29,15 +24,23 @@ router.post('/', upload.any() , function(req, res, next){
     if (err) {
       return callback(err);
     }
-    console.log('Found label: ' + labels[0].desc + ' for ' + inputFile);
-    console.log(labels);  // debug
-  });
 
-  res.render('uploads', { src:"./uploads/"+req.files[0].filename });
-  res.status(204).end();
+    console.log('Found label: ' + labels[0].desc + ' for ' + inputFile);
+    console.log( JSON.stringify(labels));  // debug
+    res.render('uploads', { src:"./uploads/"+req.files[0].filename , labels: labels});
+  });
+  //res.status(204).end();
 });
 
+
 // GOOGLE VISION API
+var Vision = require('@google-cloud/vision');
+// Instantiate a vision client
+var vision = Vision({
+  projectId: 'logging-life',
+  keyFilename: './api/logging-life.json',
+});
+
 function detectLabels (inputFile, callback) {
   // Make a call to the Vision API to detect the labels
   vision.detectLabels(inputFile, { verbose: true }, function (err, labels) {
@@ -59,17 +62,7 @@ if (module === require.main) {
   main(inputFile, console.log);
 }
 
-
 module.exports = router;
-
-
-// var upload = multer({dest : 'public/uploads/'});
-
-/*router.post('/', multer('./uploads/').single('file'), function(req,res){
-	console.log(req.file); //form files
-	res.status(204).end();
-});
-*/
 
 /* example output:
           {
