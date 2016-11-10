@@ -24,12 +24,9 @@ router.post('/', upload.any() , function(req, res, next){
     if (err) {
       return callback(err);
     }
-
-    console.log('Found label: ' + labels[0].desc + ' for ' + inputFile);
     console.log( JSON.stringify(labels));  // debug
     res.render('uploads', { src:"./uploads/"+req.files[0].filename , labels: labels});
   });
-  //res.status(204).end();
 });
 
 
@@ -50,16 +47,6 @@ function detectLabels (inputFile, callback) {
     // console.log('result:', JSON.stringify(labels, null, 2)); // debug
     callback(null, labels);
   });
-}
-
-// [START run_application]
-if (module === require.main) {
-  if (process.argv.length < 3) {
-    console.log('Usage: node labelDetection <inputFile>');
-    process.exit(1);
-  }
-  var inputFile = process.argv[2];
-  main(inputFile, console.log);
 }
 
 module.exports = router;
