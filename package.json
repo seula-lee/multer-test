@@ -1,5 +1,5 @@
 {
-  "name": "nodepad",
+  "name": "multer-test",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -17,5 +17,18 @@
     "multer": "^1.0.1",
     "q": "^1.4.1",
     "serve-favicon": "~2.3.0"
-  }
+  },
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seula-lee/multer-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seula-lee/multer-test/issues"
+  },
+  "homepage": "https://github.com/seula-lee/multer-test#readme",
+  "description": ""
 }
